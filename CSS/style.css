@@ -1,13 +1,14 @@
 /* Fonts */
 @font-face {
-  font-family: NetSa-Med;
-  src: url("../Fonts/NetflixSansMedium.ttf");
+  font-family: NetSa;
+  src: url("../Fonts/NetflixSansRegular.ttf");
 }
 /* All Selector */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: NetSa;
 }
 body {
   background-color: #000;
@@ -47,9 +48,7 @@ header nav a img {
 /* Form title Style */
 .form-wrapper h2 {
   color: #fff;
-  font-family: NetSa-Med;
   font-size: 32px;
-  font-weight: lighter;
 }
 /* Form Style */
 .form-wrapper form {
@@ -57,7 +56,9 @@ header nav a img {
 }
 /* Form content Style */
 form .form-content {
+  position: relative;
   height: 50px;
+  margin-bottom: 16px;
 }
 /* Form content input Style */
 .form-content input {
@@ -69,4 +70,26 @@ form .form-content {
   color: #fff;
   font-size: 16px;
   border-radius: 4px;
+  padding: 0 20px;
+}
+/* Form input animation Style */
+.form-content input:is(:focus, :valid) {
+  padding: 16px 20px 0;
+  background-color: #444;
+}
+/* Form content label Style */
+.form-content label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  color: #8c8c8c;
+  font-size: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.1s ease;
+}
+/* Form input label animation Style */
+.form-content input:is(:focus, :valid) ~ label {
+  font-size: 12px;
+  transform: translateY(-130%);
 }
