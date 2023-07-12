@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Site Title -->
     <title>Netflix</title>
     <!-- Site Logo icon -->
-    <link rel="icon" href="Images/netflix-icon.png">
+    <link rel="icon" href="Images/netflix-icon.png" />
     <!-- CSS link -->
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#"><img src="Images/logo.svg" alt="" /></a>
+      </nav>
+    </header>
+    <main>
+      <div class="form-wrapper">
+        <h2>Sign In</h2>
+        <form action="#">
+          <div class="form-content">
+            <input type="text" />
+            <label>Email or phone number</label>
+          </div>
+          <div class="form-content">
+            <input type="password" />
+            <label>Password</label>
+          </div>
+          <button>Sign In</button>
+          <div class="form-guide">
+            <div class="remember">
+              <input type="checkbox" id="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <a href="#">Need help?</a>
+          </div>
+        </form>
+        <p>New to Netflix? <a href="#">Sign up now</a></p>
+        <small>
+          This page is protected by Google reCAPTCHA to ensure you're not a bot.
+          <a href="#">Learn more.</a>
+        </small>
+      </div>
+    </main>
+  </body>
 </html>
