@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: NetSa-Med;
+  src: url("../Fonts/NetflixSansMedium.ttf");
 }
 /* All Selector */
 * {
@@ -23,6 +23,16 @@ body::before {
   background-position: center;
   opacity: 0.5;
 }
+/* Navigation Style */
+header nav {
+  position: fixed;
+  z-index: 999;
+  padding: 25px 60px;
+}
+/* Netflix logo Style */
+header nav a img {
+  width: 160px;
+}
 /* Form wrapper Style */
 .form-wrapper {
   position: absolute;
@@ -32,5 +42,31 @@ body::before {
   background: rgb(0, 0, 0, 0.75);
   width: 430px;
   padding: 60px;
+  border-radius: 4px;
+}
+/* Form title Style */
+.form-wrapper h2 {
+  color: #fff;
+  font-family: NetSa-Med;
+  font-size: 32px;
+  font-weight: lighter;
+}
+/* Form Style */
+.form-wrapper form {
+  margin: 25px 0 65px;
+}
+/* Form content Style */
+form .form-content {
+  height: 50px;
+}
+/* Form content input Style */
+.form-content input {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
   border-radius: 4px;
 }
