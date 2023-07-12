@@ -1,11 +1,36 @@
 /* Fonts */
 @font-face {
-    font-family: ;
-    src: url();
+  font-family: ;
+  src: url();
 }
 /* All Selector */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+}
+body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../Images/hero-img.jpg");
+  background-position: center;
+  opacity: 0.5;
+}
+/* Form wrapper Style */
+.form-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0, 0.75);
+  width: 430px;
+  padding: 60px;
+  border-radius: 4px;
 }
