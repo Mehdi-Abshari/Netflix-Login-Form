@@ -146,3 +146,32 @@ form .form-guide :where(label, a) {
 .form-wrapper small a {
   color: #0071eb;
 }
+/* Form wrapper link Style */
+.form-wrapper a {
+  text-decoration: none;
+}
+/* Form wrapper link Style */
+.form-wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* -- NETFLIX LOGIN FORM RESPONSIVE -- */
+@media (max-width: 740px) {
+  body::before {
+    display: none;
+  }
+  nav,
+  .form-wrapper {
+    padding: 20px;
+  }
+  nav a img {
+    width: 140px;
+  }
+  .form-wrapper {
+    top: 43%;
+    width: 100%;
+  }
+  .form-wrapper form {
+    margin: 25px 0 40px;
+  }
+}
