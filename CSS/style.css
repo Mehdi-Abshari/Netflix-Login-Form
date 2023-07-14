@@ -116,7 +116,33 @@ form .form-guide {
   display: flex;
   justify-content: space-between;
 }
+/* Remember Style */
+form .remember {
+  display: flex;
+}
+/* Remember input Style */
+form .remember input {
+  margin-right: 5px;
+  accent-color: #b3b3b3;
+}
+/* Form guide paragraph Style */
+form .form-guide :where(label, a) {
+  font-size: 14.4px;
+}
 /* Form paragraph Style */
 .form-wrapper :where(label, p, small, a) {
   color: #b3b3b3;
+}
+/* Form wrapper paragraph Style */
+.form-wrapper p a {
+  color: #fff;
+}
+/* Form wrapper small tag Style */
+.form-wrapper small {
+  display: block;
+  margin-top: 15px;
+}
+/* Form wrapper small tag link Style */
+.form-wrapper small a {
+  color: #0071eb;
 }
