@@ -93,3 +93,30 @@ form .form-content {
   font-size: 12px;
   transform: translateY(-130%);
 }
+/* Form content button Style */
+form button {
+  width: 100%;
+  padding: 16px 0;
+  font-size: 16px;
+  background-color: #e50914;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #fff;
+  margin: 25px 0 10px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+/* Form button hovering */
+form button:hover {
+  background-color: #c40812;
+}
+/* Form guide Style */
+form .form-guide {
+  display: flex;
+  justify-content: space-between;
+}
+/* Form paragraph Style */
+.form-wrapper :where(label, p, small, a) {
+  color: #b3b3b3;
+}
